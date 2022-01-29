@@ -8,17 +8,39 @@ Just download this [project](https://github.com/BoulderES/certificates_scripts) 
 
 ```bash
 wget https://github.com/BoulderES/certificates_scripts/archive/refs/heads/main.zip
+
 unzip certificates_scripts-main.zip
 ```
 
 ## Usage
 
-From the downloaded folder:
+From the downloaded folder add execution permissions to files:
 
 ```bash
-cd certificates_scripts-main
+cd certificates_scripts-main 
 
-...
+chmod +x createCA.sh templates/sign_certificates_TEMPLATE.sh
+
+```
+
+### Certificate Authority Creation
+
+Execute the script below and provide the requested information:
+
+```bash
+
+./createCA.sh
+
+```
+
+### Create and sign a certificate
+
+Once the CA has been created go to the desired folder and execute the script below and provide the requested information:
+
+```bash
+
+./sign_certificates.sh
+
 ```
 
 ## Contributing
