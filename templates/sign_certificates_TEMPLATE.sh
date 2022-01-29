@@ -11,7 +11,7 @@ cd $DOMAIN
 # Generate Key
 openssl genrsa -out $DOMAIN.key 4096
 # Sign Request
-openssl req -new -sha256 -key $DOMAIN.key -subj "/C=ES/ST=Alicante/L=Alicante/O=CuadrikSubdomain/OU=DevOps/CN=$DOMAIN/emailAddress=info@$DOMAIN" -out $DOMAIN.csr;
+openssl req -new -sha256 -key $DOMAIN.key -subj "/C=ES/ST=DummyState/L=DummyCity/O=DummySubdomain/OU=Dummy/CN=$DOMAIN/emailAddress=info@$DOMAIN" -out $DOMAIN.csr;
 # Populate with DNS
 cat > $DOMAIN.ext << EOF
 authorityKeyIdentifier=keyid,issuer

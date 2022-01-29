@@ -25,13 +25,19 @@ chmod +x createCA.sh templates/sign_certificates_TEMPLATE.sh
 
 ### Certificate Authority Creation
 
-Execute the script below and provide the requested information:
+Execute the script below and provide the requested information (dummy CA name and password):
 
 ```bash
 
 ./createCA.sh
 
 ```
+
+The script execution creates a folder with the files within and using the same name provided as CA name. 
+
+For this example the name used as CA is "dummy.local" so you will need to navigate to this folder in the next step.
+
+IMPORTANT!!! The generated certificate (.crt file of the "dummy.local" folder) must be installed in the SO as Trusted Root Certification Authorities (machine level)
 
 ### Create and sign a certificate
 
@@ -42,6 +48,7 @@ Once the CA has been created go to the desired folder and execute the script bel
 ./sign_certificates.sh
 
 ```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
