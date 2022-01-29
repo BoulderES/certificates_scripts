@@ -7,9 +7,9 @@ Dirty Scripts to create CAs and sign domain certificates
 Just download this [project](https://github.com/BoulderES/certificates_scripts) on the desired folder.
 
 ```bash
-wget https://github.com/BoulderES/certificates_scripts/archive/refs/heads/main.zip
+ wget --no-check-certificate https://github.com/BoulderES/certificates_scripts/archive/master.tar.gz
 
-unzip certificates_scripts-main.zip
+tar -xzf ./master.tar.gz -C ./
 ```
 
 ## Usage
