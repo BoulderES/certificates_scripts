@@ -7,9 +7,9 @@ Dirty Scripts to create CAs and sign domain certificates
 Just download this [project](https://github.com/BoulderES/certificates_scripts) on the desired folder.
 
 ```bash
- wget --no-check-certificate https://github.com/BoulderES/certificates_scripts/archive/master.tar.gz
+$ wget --no-check-certificate https://github.com/BoulderES/certificates_scripts/archive/master.tar.gz
 
-tar -xzf ./master.tar.gz -C ./
+$ tar -xzf ./master.tar.gz -C ./
 ```
 
 ## Usage
@@ -17,9 +17,9 @@ tar -xzf ./master.tar.gz -C ./
 From the downloaded folder add execution permissions to files:
 
 ```bash
-cd certificates_scripts-main 
+$ cd certificates_scripts-main 
 
-chmod +x createCA.sh templates/sign_certificates_TEMPLATE.sh
+$ chmod +x createCA.sh templates/sign_certificates_TEMPLATE.sh
 
 ```
 
